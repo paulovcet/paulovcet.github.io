@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">  
+        <link rel="stylesheet" type="text/css" href="style.css">
+            <title>Paulo Victor de Araújo Pinheiro</title>
+        
+     
+    </head>
+
+ <!-- Criando Links para radioButtons (clicando no nome associado para cada rdb) -->
+    <body>
+
+        
+        <nav class="links">
+            <label for="rd_inicio"><i class="fas fa-book esp1" ></i> Início</label>
+            <label for="rd_sobre"><i class="fas fa-glasses esp2" ></i> Sobre mim?</label>
+            <label for="rd_curiosidades"><i class="fas fa-gamepad esp3" ></i> Curiosidades</label>
+            <label for="rd_contato"><i class="fas fa-phone esp4"></i> Contato</label>
+            
+        </nav>
+
+        <div class="scroll">
+            <input type="radio" name="grupo" id="rd_inicio" checked="true">
+            <input type="radio" name="grupo" id="rd_sobre">
+            <input type="radio" name="grupo" id="rd_curiosidades">
+            <input type="radio" name="grupo" id="rd_contato">
+            
+        
+
+            <!-- criando seções para  os grupos criados anteriormente-->
+
+            <section class="sections">
+                <section class="bloco" id="inicio">
+                    <div class="extra">
+                        <div class="fig"><img src="eu.jpg" alt="eu"  height="250px"></div>
+                    
+                        <div>
+                            <p>
+                            Olá, me chamo Paulo Victor de Araújo Pinheiro.<br> Estudante do curso de Ciência e Tecnologia na Universidade Federal do Rio Grande do Norte(UFRN), com experiência em manutenção de computadores em geral. Dedicado a expandir meus conhecimentos na área de linguagens de programação, tentando um dia me tornar um desenvolvedor Full Stack.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <section class="bloco" id="sobre">
+                    <div class="extra">
+                        <div class="fig"><img src="pc.png" alt="pc" height="150px"> </div>
+                        <div>
+                            <h3>Sobre mim? hum... </h3>
+                            <p>                        
+                            Adoro programar, assitir filmes e seriados e jogar varios tipos de jogos no pc.
+                            Acredito que sou uma pessoa responsável e focada no que faço, sempre buscando melhorar cada dia mais, tanto no meu lado profissional como também o meu lado social.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bloco" id="curiosidades">
+                    <div>
+                        <img src="game.jpg" alt="game" >
+                        <p>
+                        * Gamer convicto<br><br>
+                        * Adoro programar e conhecer novas linguagens  <br><br>
+                        * Pai de 2 gatos (Riki e Noka)<br><br>
+                        * Gasto todo meu dinheiro com comida e dando upgrade no meu PC <br><br>
+                        * Já gostei muito de ir a academia, hoje so vou para ficar saudavel
+                        </p>
+                    </div>
+                </section>
+
+                <section class="bloco" id="contato">
+                    <p> E-mail: paulovcet@gmail.com
+                            <br><br>
+                        Telefone: (84) 99649-4084
+                    </p>
+                </section>
+            </section>
+
+        </div>
+
+        <footer>ProSEmpre - EJECT © 2020.</footer>
+    </body>
+
+    <script src="https://kit.fontawesome.com/feb15bb82f.js" crossorigin="anonymous"></script>
+
+</html>
