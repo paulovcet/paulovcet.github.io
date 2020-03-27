@@ -1,0 +1,160 @@
+
+/* GERAL */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blanchedalmond;
+    margin: 0; padding: 0;
+    text-shadow: 1px 1px 1px black;
+    background-color: transparent;
+}
+
+p{
+    background-color: transparent;
+}
+
+h1{
+    text-shadow: 1px 1px 1px black;
+    font-size: 5vh;
+    background-color: transparent;
+    text-align: center;
+}
+
+footer{
+    color: black;
+    background-color:black;
+    color: blanchedalmond;
+    font-size: 21px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;    
+}  
+
+/* CLASS */
+
+.links{
+    color: blanchedalmond;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+
+.links label{
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+    font-size: 100%;
+    color: blanchedalmond;
+}
+
+.links label:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.scroll{
+    display: flex;
+    width: 100vw;
+    height: 97.5vh;
+    overflow: hidden;
+}
+
+.scroll input{
+    display: none;
+}
+
+.bloco{
+    width: 100vw; height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sections{
+    transition: all 0.5s;
+}
+
+.fig{   
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.extra{
+    padding: 10%;
+}
+
+.esp{
+    padding-right: 1%;
+    color: blanchedalmond;
+    background-color: transparent;
+}
+
+/* IDs */
+
+#inicio{
+    background-color: black;
+}
+
+#inicio p{
+    font-size: 20px;
+    padding: 5%;
+    text-align: justify;
+    color: blanchedalmond;
+    text-shadow: 1px 1px 1px black;
+}
+
+#inicio img{
+    border-radius: 30% ;    
+}
+
+#sobre{
+    color: white;
+    font-size:30px ;
+    text-shadow: 1px 1px 1px black;
+    background-color: black;
+}
+
+#sobre p{
+    font-size: 20px;
+    text-align: justify;    
+}
+
+#sobre img{
+    padding: 0 0 0 0%;
+    border-radius: 500px;
+}
+
+#curiosidades{
+    background-color: black;
+}
+
+#curiosidades p{
+    font-size: 25px;
+    padding: 10%;
+    text-align: justify;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 2px black;
+}
+
+#contato{
+    background-image: url(b2.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+#contato p{
+    font-size:30px ;
+    background-color: transparent;
+} 
+
+#rd_sobre:checked ~ .sections{
+    margin-top: -100vh;
+}
+
+#rd_curiosidades:checked ~ .sections{
+    margin-top: -200vh;
+}
+#rd_contato:checked ~ .sections{
+    margin-top: -300vh;
+}
